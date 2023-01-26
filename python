@@ -1,0 +1,130 @@
+1.What are the two values of the Boolean data type? How do you write them?
+
+Ans:- 
+There are two type of boolean values , 1st True and 2nd is False. We write the in letter with capitalized first letter.
+
+2. What are the three different types of Boolean operators?
+Ans:-
+There are three type of boolean oprators as below.
+1. AND('a'&'b')
+2. OR ('a'|'b')
+3. NOT('a'!'b')
+
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+Somebody help me , i am not good with this.
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+Ans:-  True
+
+5. What are the six comparison operators?
+Ans:- 
+Here are six comparison oprators as below:
+1.Less than (<)
+2.Greater than (>)
+3.Less than or equal to (<=)
+4.Greater than or equal to (>=)
+5.Equal to (==)
+6.Not equal to (!=)
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+Ans:-
+Equls to:- we use equels to oprator (==) to compare vlaue if that is matched or not , usually used in conditional statement like if/else .
+Assignment oprator :- Assignment oprator (=) used to assign a variable to a value.
+
+Here in below example in first line we used assignment to to assign a value to variable(password), while in condition term (if/else) we use equels to compare given password to 
+assigned password.
+password='seceret'
+user_input=input("Enter your password")
+
+if user_input==password:
+    print("access granted")
+    
+else:
+    print("wrong password")
+    
+    
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+
+Ans :- Here are four blocks .
+1st. - Used to aplly If statement to check spam value for 10.
+2nd- used to apply to check the spam value is more that 5.
+3rd - used to apply to else statement to and print inside it.
+4th - used to print statement after else statement.
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+Ans:- Code has been written as below.
+spam=int(input(""))
+if spam==1:
+    print("Hello")
+elif spam==2:
+    print("howdy")
+else:
+    print("Greetings")
+    
+    I given access to user to enter number and given condition to code to decide print as above with if/elif/else.
+    
+    9.If your programme is stuck in an endless loop, what keys you’ll press?
+    Ans:-
+    On window , linus & mac machine we can press (ctrl + c) 
+    Pressing this combination sends a interrupr signal to the program, which will stop the loop excution.
+    
+ 10. How can you tell the difference between break and continue?
+ Ans:-
+ We use break and countinue to control the flow of loop.
+ as:- for i in range(10):
+          if i==5:
+          break
+          print(i)
+   Here in above example , loop will exit when values of i is 5 when facing itration,and program countinue excution after the loop.
+   
+   i.e:-
+          for i in range(10):
+          if i % 2 == 0:
+          countinue
+          print(i)
+  
+      while in this loop excution coutinue to excute while i have a even value , loop skip the itrate and coutier the excution of program.
+      
+      11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+      Ans:-
+     in given all three examples code will produce same output but first two (range(10) and range(0,10)) are using default argument while third (range(0,10,1))
+     providing all arguments explicitly.
+     
+     12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+     Ans:- using for loop-
+     for i in range(1,11):
+    print(i)
+     
+     using while loop-
+     i=1
+while i <= 10:
+    print(i)
+    i+=1
+    
+    13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+          
+Ans-
+we can call the span by importing as below:-
+
+    import spam
+    spam.bacon()
+    import will call entire module then by using dot notion you can call specific function.
+
